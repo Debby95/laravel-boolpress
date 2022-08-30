@@ -2,10 +2,8 @@
     <div>
         <TheNavbar></TheNavbar>
         <div class="container">
-            <h1>Helloo {{message}}</h1>
-
-            <h2>Posts List</h2>
-            <PostsList></PostsList>
+            <router-view></router-view>
+            
         </div>
     </div>
 </template>
