@@ -2108,7 +2108,7 @@ var render = function render() {
       key: _vm.posts.id,
       staticClass: "col"
     }, [_c("div", {
-      staticClass: "card mb-3",
+      staticClass: "card rounded mb-3",
       staticStyle: {
         width: "18rem"
       }
@@ -2127,7 +2127,7 @@ var render = function render() {
         innerHTML: _vm._s(post.content)
       }
     }), _vm._v(" "), _c("router-link", {
-      staticClass: "btn btn-primary",
+      staticClass: "btn",
       attrs: {
         to: {
           name: "posts.show",
@@ -2379,7 +2379,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.card-img-top {\n    aspect-ratio: 16/9;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n", ""]);
+exports.push([module.i, "\n.card-img-top {\n    aspect-ratio: 16/9;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.card {\n    /* From https://css.glass */\n    background: rgba(31, 3, 255, 0.12);\n    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);\n    backdrop-filter: blur(20px);\n    -webkit-backdrop-filter: blur(20px);\n    border: 1px solid rgb(100, 3, 255);\n}\n.btn {\n    /* From https://css.glass */\n    background: rgba(170, 112, 218, 0.35);\n    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);\n    backdrop-filter: blur(20px);\n    -webkit-backdrop-filter: blur(20px);\n    border: 1px solid rgba(170, 112, 218, 1);\n}\n", ""]);
 
 // exports
 
