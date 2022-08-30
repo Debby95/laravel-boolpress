@@ -7,7 +7,7 @@ import PostShow from "./pages/posts/show.vue"
 export const routes = [
     { path: "/", component: Home, name: "home" },
     { path: "/contacts", component: Contacts, name: "contacts" },
-    { path: "/posts/idpost", component: PostShow, name: "posts.show" },
+    { path: "/posts/:slug", component: PostShow, name: "posts.show" },
 ]
 
 
