@@ -80,3 +80,14 @@
 </div>
 @endsection
 
+<style>
+    button {
+        /* From https://css.glass */
+        background: rgba(170, 112, 218, 0.35);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(170, 112, 218, 1);
+    }
+</style>
+
