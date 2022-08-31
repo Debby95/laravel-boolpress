@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <a href="{{route('admin.posts.create')}}"><button>New Post</button></a>
-        <table class="table">
+        <a href="{{route('admin.posts.create')}}"><button class="btn btn-primary">New Post</button></a>
+        <table class="table mt-3">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -29,19 +29,19 @@
                             </td>
                             <td>
                                 <a href="{{route('admin.posts.show', ['post' => $post->slug])}}">
-                                    <button>Show</button>
+                                    <button class="btn btn-primary">Show</button>
                                 </a>
                             </td>
                             <td>
                                 <a href="{{route('admin.posts.edit', ['post' => $post->slug])}}">
-                                    <button>Edit</button>
+                                    <button class="btn btn-info text-white">Edit</button>
                                 </a>
                             </td>
                             @csrf
                             @method('DELETE')
                             <td>
                                 <a href="{{route('admin.posts.destroy', ['post' => $post->slug])}}">
-                                    <button>Delete</button>
+                                    <button class="btn btn-danger">Delete</button>
                                 </a>
                             </td>
                         </tr>
@@ -55,21 +55,7 @@
 @endsection
 
 <style>
-    button{
-        /* From https://css.glass */
-        background: rgba(170, 112, 218, 0.35);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(170, 112, 218, 1);
-    }
-
-    table {
-        background-color: rgba(81, 141, 209, 0.35);
-        margin-top: 20px;
-    }
-
-
+    
 </style>
 
 

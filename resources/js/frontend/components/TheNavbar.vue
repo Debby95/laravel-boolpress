@@ -1,6 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-        <div class="container">
+    <div class="container ">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-3">
             <a class="navbar-brand" href="/">Boolpress</a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
@@ -23,8 +23,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
+    
 </template>
 
 <script>
@@ -32,3 +33,7 @@
 
     }
 </script>
+
+<style>
+    
+</style>

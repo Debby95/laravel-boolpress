@@ -3,11 +3,11 @@
         <h1>Contact Page</h1>
 
         <form @submit.prevent="onFormSubmit">
-            <input type="text" placeholder="Name" v-model="name">
+            <input class="mb-3" type="text" placeholder="Name" v-model="name">
             <br>
             <textarea cols="30" rows="10" placeholder="Message" v-model="message"></textarea>
             <br>
-            <button type="submit">Send</button>
+            <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </div>
 </template>
@@ -32,3 +32,9 @@ import axios from 'axios';
         }
     }
 </script>
+
+<style>
+    input, textarea {
+        border-radius: 15px;
+    }
+</style>

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a href="{{route('admin.posts.index')}}"><button>Create</button></a>
+            <a href="{{route('admin.posts.index')}}"><button class="btn btn-primary">Create</button></a>
             <form action="{{route('admin.posts.store')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group mb-3 mt-3">
@@ -17,8 +17,8 @@
             </div>
             <div class="form-group">
                 <label>Title</label>
-                <input name="title" type="text" class="form-control mb-3 @error('title') is-invalid @enderror"
-                placeholder="title" value="{{ old('title') }}" required>
+                <input name="itle" type="text" class="form-control mb-3 @error('title') is-invalid @enderror"
+                placeholder="Title" value="{{ old('title') }}" required>
                 @error('title')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
@@ -26,7 +26,7 @@
             <div class="form-group">
                 <label>Content</label>
                 <textarea name="content" type="text" class="form-control mb-3 @error('content') is-invalid @enderror" rows="10"
-                placeholder="content" required>{{ old('content') }}</textarea>
+                placeholder="Content" required>{{ old('content') }}</textarea>
                 @error('content')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
@@ -55,7 +55,7 @@
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             
         </div>
@@ -65,12 +65,5 @@
 @endsection
 
 <style>
-    button {
-        /* From https://css.glass */
-        background: rgba(170, 112, 218, 0.35);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(170, 112, 218, 1);
-    }
+
 </style>

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a href="{{route('admin.posts.index')}}"><button>Posts</button></a>
+            <a href="{{route('admin.posts.index')}}"><button class="btn btn-primary">Posts</button></a>
             <form action="{{route('admin.posts.update', ['post' => $post->slug])}}" method="POST" enctype="multipart/form-data">
                 <h1>Modify {{ $post->title }}</h1>
                 @csrf
@@ -14,7 +14,7 @@
                         <div class="form-group">
                             <label>Cover Img</label>
                             <img class="img-fluid" src="{{ asset('storage/' . $post->cover_img) }}" alt="">
-                            <input name="cover_img" type="file" class="form-control @error('cover_img') is-invalid @enderror"
+                            <input name="cover_img" type="file" class="form-control mt-3 @error('cover_img') is-invalid @enderror"
                             placeholder="img" value="{{ old('cover_img', $post->cover_img) }}" required>
                             @error('cover_img')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -67,7 +67,7 @@
                                 <div class="invalid-feedback">{{ $message }}</div>
                             @enderror
                         </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
                 
@@ -81,13 +81,6 @@
 @endsection
 
 <style>
-    button {
-        /* From https://css.glass */
-        background: rgba(170, 112, 218, 0.35);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        border: 1px solid rgba(170, 112, 218, 1);
-    }
+
 </style>
 

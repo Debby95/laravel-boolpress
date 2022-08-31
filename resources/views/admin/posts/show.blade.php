@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card mb-3">
                 <h1>Post: {{$post->title}}</h1>
                 <a href="{{route('admin.posts.index') }}"></a>
             </div>
@@ -39,15 +39,15 @@
                 
             </dl>
             <a href="{{route('admin.posts.edit', ['post' => $post->slug])}}">
-                <button type="submit">Edit</button>
+                <button type="submit" class="btn btn-info text-white">Edit</button>
             </a>
             <a href="{{route('admin.posts.index', $post->slug)}}">
-                <button type="submit">Posts</button>
+                <button type="submit" class="btn btn-primary">Posts</button>
             </a>
             <form action="{{route('admin.posts.destroy', ['post' => $post->slug])}}" method="post">
                 @csrf
                 @method('DELETE')
-                <button type="submit">Delete</button>
+                <button type="submit" class="btn btn-danger mt-2">Delete</button>
             </form>
         </div>
     </div>
