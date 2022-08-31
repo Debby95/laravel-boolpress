@@ -19,7 +19,7 @@
                         <router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/posts">Amin Posts</a>
+                        <a class="nav-link" href="/admin/posts">Admin Posts</a>
                     </li>
                 </ul>
             </div>

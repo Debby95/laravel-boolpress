@@ -2223,7 +2223,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: "/admin/posts"
     }
-  }, [_vm._v("Amin Posts")])]);
+  }, [_vm._v("Admin Posts")])]);
 }];
 render._withStripped = true;
 
